@@ -1,0 +1,31 @@
+.gitignore
+  s_3aea7aafbacfa5::t_15b124adf08f04 1-23
+tsconfig.app.tsbuildinfo
+  s_3aea7aafbacfa5::t_3542ad78b9072d 1
+.github/workflows/deploy.yml
+  s_3aea7aafbacfa5::t_d9842050d174e8 1-46
+tsconfig.node.tsbuildinfo
+  s_3aea7aafbacfa5::t_3542ad78b9072d 1
+public/favicon.svg
+  s_3aea7aafbacfa5::t_138201530a87ee 1-8
+index.html
+  s_3aea7aafbacfa5::t_b7abd180a9a60c 6
+public/CNAME
+  s_3aea7aafbacfa5::t_236e352a6a6867 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "3ba44349b1681ccce092ea926c3a62c124e9264d",
+  "prompts": {},
+  "sessions": {
+    "s_3aea7aafbacfa5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_15755a698ffeNrRkbjhvpcxU84",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"
+    }
+  }
+}
