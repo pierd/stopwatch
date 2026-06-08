@@ -1,0 +1,20 @@
+src/index.css
+  s_3aea7aafbacfa5::t_99b6cf6768c4c9 64,70-73
+  s_3aea7aafbacfa5::t_5d6e4b3f84a2c9 35-39,43-47,50-51,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "ed30e41bf2fb25c1ca4ca843959e3286b938d4d6",
+  "prompts": {},
+  "sessions": {
+    "s_3aea7aafbacfa5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_15755a698ffeNrRkbjhvpcxU84",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"
+    }
+  }
+}
