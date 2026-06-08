@@ -32,17 +32,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  gap: 1rem;
+  padding: calc(env(safe-area-inset-top) + 0.5rem)
+    calc(env(safe-area-inset-right) + 0.5rem)
+    calc(env(safe-area-inset-bottom) + 1rem)
+    calc(env(safe-area-inset-left) + 0.5rem);
 }
 
 .time {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   font-variant-numeric: tabular-nums;
   font-weight: 200;
-  font-size: clamp(3rem, 18vw, 9rem);
-  letter-spacing: 0.02em;
+  font-size: min(23vw, 42vh);
+  letter-spacing: -0.01em;
   line-height: 1;
+  white-space: nowrap;
   transition: opacity 0.2s ease;
 }
 
@@ -53,20 +61,21 @@ body {
 .controls {
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .btn {
   appearance: none;
   border: none;
-  border-radius: 999px;
-  padding: 0.9rem 2.2rem;
-  font-size: 1.1rem;
+  border-radius: 1.5rem;
+  flex: 1;
+  padding: clamp(1.5rem, 5vh, 3rem) 1rem;
+  font-size: clamp(1.5rem, 6vw, 3rem);
   font-weight: 500;
   color: var(--fg);
   background: var(--accent);
   cursor: pointer;
   transition: transform 0.05s ease, background 0.2s ease;
-  min-width: 8rem;
 }
 
 .btn:active {
