@@ -19,7 +19,8 @@ function formatTime(ms: number): string {
 
 export default function App() {
   const [elapsed, setElapsed] = useState(0)
-  const [running, setRunning] = useState(true)
+  // Start paused: iOS only grants the wake lock from a user gesture.
+  const [running, setRunning] = useState(false)
 
   // Anchor: wall-clock time the current run started, minus already accrued ms.
   const startRef = useRef(0)
@@ -61,7 +62,7 @@ export default function App() {
       <div className={`time${running ? '' : ' paused'}`}>{formatTime(elapsed)}</div>
       <div className="controls">
         <button onClick={toggle} className="btn">
-          {running ? 'Pause' : 'Resume'}
+          {running ? 'Pause' : elapsed === 0 ? 'Start' : 'Resume'}
         </button>
         <button onClick={reset} className="btn secondary">
           Reset
